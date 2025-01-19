@@ -33,6 +33,7 @@ jobs:
         run: echo "${{ toJson(github) }}"
 
   deploy:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
