@@ -35,7 +35,7 @@ jobs:
       # Optional: Clone the repository again if needed (not usually necessary)
       # - name: Clone repository
       #   run: git clone https://github.com/${{ github.repository }}.git
-    deploy:
+    deplo:
         runs-on: ubuntu-latest
 
         steps:
@@ -56,4 +56,3 @@ jobs:
               run: npm run-build
             - name: Deploy
               run: echo "Deplument successfull"
-              
